@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "mocha \"test/**/*.test.js\" --timeout 10000",
-    "testes-controller": "mocha \"test/controller/**/*.test.js\" --timeout 10000",
-    "testes-external": "mocha \"test/external/**/*.test.js\" --timeout 10000",
+    "testes-controller": "mocha \"test/rest/controller/**/*.test.js\" --timeout 10000",
+    "testes-external": "mocha \"test/rest/external/**/*.test.js\" --timeout 10000",
     "testes-graphql": "mocha \"test/graphql/**/*.test.js\" --timeout 10000",
     "start:graphql": "node graphql/server.js"
   },

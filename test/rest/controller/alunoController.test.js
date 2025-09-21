@@ -1,8 +1,8 @@
 const request = require('supertest');
 const sinon = require('sinon');
 const { expect } = require('chai');
-const app = require('../../app');
-const alunoService = require('../../service/alunoService');
+const app = require('../../../app');
+const alunoService = require('../../../service/alunoService');
 
 describe('Aluno Controller', () => {
   let token;

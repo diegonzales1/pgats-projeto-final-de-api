@@ -1,8 +1,8 @@
 const request = require('supertest');
 const sinon = require('sinon');
 const { expect } = require('chai');
-const app = require('../../app');
-const authService = require('../../service/authService');
+const app = require('../../../app');
+const authService = require('../../../service/authService');
 
 describe('Auth Controller', () => {
   it('Quando informo login correto recebo 200', async () => {
