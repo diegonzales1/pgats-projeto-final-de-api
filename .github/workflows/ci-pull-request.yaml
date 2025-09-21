@@ -20,9 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-    
-      - name: Checkout repository
-        uses: actions/checkout@v3
 
       - name: Run controller tests
         run: npm run testes-controller
