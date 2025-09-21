@@ -28,7 +28,7 @@ describe('Aluno Controller', () => {
           telefone: '99-999999999',
           endereco: 'Rua dos qas, 10',
         });
-      console.log('TESTEEEE ' + JSON.stringify(res.body));
+      
       expect(res.status).to.equal(201);
       expect(res.body).to.have.property('nome', 'Diego');
       expect(res.body).to.have.property('idade', 29);

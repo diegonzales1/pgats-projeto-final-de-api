@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha \"test/**/*.test.js\" --timeout 10000"
+    "test": "mocha \"test/**/*.test.js\" --timeout 10000",
+    "testes-controller": "mocha \"test/controller/**/*.test.js\" --timeout 10000",
+    "testes-external": "mocha \"test/external/**/*.test.js\" --timeout 10000"
   },
   "keywords": [],
   "author": "",
