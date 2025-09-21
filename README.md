@@ -1,5 +1,34 @@
 # API de Cadastro de Alunos
 
+## API GraphQL
+Além da API REST, este projeto expõe os serviços de Aluno, Curso e Autenticação via GraphQL usando ApolloServer e Express.
+
+### Como executar a API GraphQL
+1. Acesse a pasta `graphql`:
+  ```bash
+  cd graphql
+  ```
+2. Instale as dependências (se ainda não instalou no projeto raiz):
+  ```bash
+  npm install
+  ```
+3. Para rodar o servidor GraphQL:
+  ```bash
+  node server.js
+  ```
+4. Para rodar apenas o app (para testes):
+  ```bash
+  node app.js
+  ```
+
+### Autenticação nas Mutations
+Obtenha o JWT via login REST e envie no header `Authorization: Bearer <token>` nas Mutations protegidas.
+
+### Documentação GraphQL
+O endpoint GraphQL estará disponível em `/graphql` (porta 4000 por padrão).
+Consulte o playground do ApolloServer para explorar o schema.
+
+
 ## Descrição
 API REST para cadastro de alunos e cursos, com autenticação JWT e controle de permissões por roles (coordenador e diretor). Utiliza banco de dados em memória e documentação via Swagger.
 
@@ -19,11 +48,15 @@ node server.js
 
 A API estará disponível em `http://localhost:3000`.
 
-## Documentação Swagger
 
-Acesse a documentação interativa em:
+## Documentação Swagger
+Acesse a documentação interativa REST em:
 ```
 http://localhost:3000/api-docs
+```
+E a documentação GraphQL em:
+```
+http://localhost:4000/graphql
 ```
 
 ## Usuários de Teste
